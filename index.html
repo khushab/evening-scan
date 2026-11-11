@@ -6,9 +6,16 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Evening Scan</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231D2556'/%3E%3Cpath d='M16 5v22' stroke='%23F2A93B' stroke-width='2'/%3E%3Crect x='11' y='10' width='10' height='11' rx='1.5' fill='%23F2A93B'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-DwgOiwkQ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BPjeJIkO.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23159A65'/%3E%3Cpath d='m7.5 20.5 5-5 3.5 3.5 7.5-8M19.5 11h4v4' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <script>
+      // apply a saved light or dark choice before the first paint, so the page doesn't flash
+      try {
+        var t = JSON.parse(localStorage.getItem("evening-scan.theme") || "{}").mode;
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-k927JSpR.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DeDAu9Rl.css">
   </head>
   <body>
     <div id="root"></div>
